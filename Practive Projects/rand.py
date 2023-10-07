@@ -10,3 +10,10 @@ else:
 print(result)
 
 print("Add lines to test git")
+
+#Now I am adding something new to see what happens
+
+for i in range(5):
+    print(i)
+
+list1 = [1, 2, 3, 4]
