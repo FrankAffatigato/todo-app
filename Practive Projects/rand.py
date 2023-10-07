@@ -19,3 +19,6 @@ for i in range(5):
 list1 = [1, 2, 3, 4]
 
 print("I want to see different commits")
+
+def sum_func(a, b, c):
+    return a + b + c
