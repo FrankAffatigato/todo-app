@@ -1,3 +1,5 @@
 lift
 code
 sleep
+jog
+run

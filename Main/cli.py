@@ -50,9 +50,7 @@ while True:
         
             edit_input = int(user_action[5:].strip()) - 1
             new_item = input("Enter new task \n")
-            print(todos)
             todos[edit_input] = new_item + "\n"
-            print(todos)
         
         #Write the new edited list
             fn.write_todos('text.txt', todos)
@@ -65,7 +63,3 @@ while True:
     else:
         print('Command not found')
 print("Bye!")
-print("git_test")
-#git test
-print("I am testing this")
-print(2)
