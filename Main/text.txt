@@ -1,12 +1,12 @@
 lift
-code
+program
 sleep
 run
 jump
 walk
 run
 stay
-fun
+code
 job
 stay
 drive

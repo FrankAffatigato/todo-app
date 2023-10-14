@@ -26,7 +26,6 @@ while True:
         window['todos'].update(values=todos)
 
     elif event == "todos":
-        print(value["todos"])
         window['todo'].update(value=value['todos'][0])
         todos = fn.get_todos()
         todos_index = todos.index(value["todos"][0])
