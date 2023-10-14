@@ -2,4 +2,8 @@ lift
 code
 sleep
 jog
-run
+go
+walk
+go
+stay
+
