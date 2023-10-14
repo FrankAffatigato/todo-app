@@ -1,9 +1,12 @@
 lift
 code
 sleep
-jog
-go
+run
+jump
 walk
-go
+run
 stay
-
+fun
+job
+stay
+drive
