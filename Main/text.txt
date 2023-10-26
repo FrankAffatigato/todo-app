@@ -1,12 +1,5 @@
 lift
-program
-sleep
 run
-jump
-walk
-run
-stay
-code
-job
-stay
+jog
 drive
+code
