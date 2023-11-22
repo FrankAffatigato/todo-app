@@ -10,7 +10,7 @@ sg.theme("DarkGray8")
 
 label = sg.Text("Type in a to-do")
 input_box = sg.InputText(tooltip="Enter task", key='todo')
-add_button = sg.Button("add", button_color="LightBlue", mouseover_colors=("white"), key="Add")
+add_button = sg.Button(image_filename="add.png", button_color="LightBlue", mouseover_colors=("white"), key="Add")
 
 list_box = sg.Listbox(values=fn.get_todos("text.txt"), key='todos',
                       enable_events=True, size=[45, 10])
