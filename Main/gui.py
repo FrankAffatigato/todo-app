@@ -2,12 +2,15 @@ import function as fn
 import PySimpleGUI as sg
 import os
 
+if not os.path.exists("text.txt"):
+    with open("text.txt", 'w') as file:
+        pass
 
 sg.theme("DarkGray8")
 
 label = sg.Text("Type in a to-do")
 input_box = sg.InputText(tooltip="Enter task", key='todo')
-add_button = sg.Button(size=2, image_filename="add.png", button_color="LightBlue", mouseover_colors=("white"), key="Add")
+add_button = sg.Button("add", button_color="LightBlue", mouseover_colors=("white"), key="Add")
 
 list_box = sg.Listbox(values=fn.get_todos("text.txt"), key='todos',
                       enable_events=True, size=[45, 10])
@@ -28,10 +31,6 @@ window = sg.Window('My To-Do App', layout=[[label],
 #Keep application open until it is intentionally closed
 while True:
 
-    if not os.path.exists("text.txt"):
-        with open("text.txt", 'w') as file:
-            pass
-
     event, value = window.read()
 
     if event == "Add": 
@@ -45,7 +44,6 @@ while True:
         todos = fn.get_todos()
         todos_index = todos.index(value["todos"][0])
         todo_value = value["todos"][0]
-        print(todo_value)
 
     elif event == "Edit":
         try:
